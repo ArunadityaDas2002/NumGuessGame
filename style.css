@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #3498db, #6f7b97);
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(52, 152, 219, 0.5);
+}
+
+.game-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    color: #000000;
+}
+
+input {
+    padding: 15px;
+    margin: 20px 0;
+    width: 90%;
+    box-sizing: border-box;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+button {
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #27ae60, #2ecc71);
+}
+
+p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+#result,
+#attempts,
+#hint {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#result {
+    color: #e74c3c;
+}
+
+#attempts {
+    color: #e74c3c;
+}
+
+#hint {
+    color: #3498db;
+}
+
+/* Adjusted positioning of symbols */
+
+.game-container::after {
+    content: '🎯'; /* Bullseye */
+    font-size: 80px;
+    color: #2ecc71;
+    position: absolute;
+    bottom: -100px; /* Adjusted bottom position */
+    left: 50%;
+    transform: translateX(-50%);
+}
